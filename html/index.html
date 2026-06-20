@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEC site</title>
+    <script src="../js/tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f9a825',   //
+                        dark: '#1a2a3a',
+                        muted: '#4a5b6b',
+                        lightbg: '#f8fafc',
+                        softgray: '#f1f5f9',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 8px 30px rgba(0, 0, 0, 0.05)',
+                        'card-hover': '0 12px 40px rgba(0, 0, 0, 0.08)',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <header class="relative w-full h-[750px] bg-cover bg-center bg-no-repeat" 
+        style="background-image: linear-gradient(90deg, #0000004b, #000000b0), url('../images/image_header.jpg')">
+
+        <div class="px-12 py-6">
+            <div class="hidden md:flex justify-between text-white">
+                <div class="flex gap-2">
+                    <span>Kinshasa, Limete 1er rue</span>
+                    <span>+243 895 719 998</span>
+                </div>
+                <div>
+                    <a href="">Connexion</a> | <a href="">Inscription</a>
+                </div>
+            </div>
+            <nav class="hidden md:flex justify-between text-gray-200 pt-8">
+                <div id="logo" class=" text-3xl text-white flex items-center gap-4">
+                    <img src="../images/logo-IEC.png" alt="" class="w-10 h-10">
+                    <h1>
+                        IEC<span class="text-yellow-600 font-bold">Solaire</span>
+                    </h1>
+                </div>
+                <div class="flex gap-6 font-bold">
+                    <a href="index.html" class="text-yellow-500">Acceuil</a>
+                    <a href="#service">Services</a>
+                    <a href="">Produits</a>
+                    <a href="#apropos">A propos</a>
+                    <a href="">Contact</a>
+                </div>
+            </nav>
+
+        </div>
+
+        <nav class="absolute top-0 z-40 w-[100%] flex md:hidden justify-between px-12 py-6">
+            <div id="logo" class=" text-3xl text-white flex items-center gap-4">
+                <img src="../images/logo-IEC.png" alt="" class="w-10 h-10">
+                <h1>
+                    IEC<span class="text-yellow-600 font-bold">Solaire</span>
+                </h1>
+            </div>
+            <button onclick="menuburger()">
+                <i id="btn-open" class="fas fa-bars text-2xl text-white"></i>
+                <i id="btn-close" class="hidden fas fa-box text-2xl text-white"></i>
+            </button>
+        </nav>
+        <div id="options" class="bg-gray-800 text-white absolute top-0 w-full h-screen hidden flex flex-col items-center justify-center gap-2">
+            
+            <div class="flex flex-col gap-2 mt-6">
+                <a href="index.html" class="text-yellow-500">Acceuil</a>
+                <a href="services.html">Services</a>
+                <a href="">Produits</a>
+                <a href="about.html">A propos</a>
+                <a href="">Contact</a>
+                <a href="">Connexion</a>
+                <a href="">Inscription</a>
+            </div>
+        </div>
+
+
+        <div class="my-20 text-center text-white flex flex-col justify-center items-center gap-6">
+            <h1 class="text-3xl font-bold">Votre Enérgie,</h1>
+            <h1 class="text-6xl font-bold">Notre Priorité</h1>
+            <p class="text-2xl">
+                 sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea cumque nobis animi rerum quos qui alias.
+            </p>
+            <a href="" class="mt-10 p-2 px-4 w-[150px] bg-blue-800 text-white font-bold">VOIR PLUS</a>
+        </div>
+
+        
+
+    </header>  
+    <section id="apropos" class="w-full flex justify-center gap-10 flex-wrap px-12 items-center">
+        <img src="../images/3d-rendering-isometric-house-model.jpg" alt="" class="w-[500px] h-full">
+        <div class="flex flex-col gap-4 w-full md:w-1/2 py-6">
+            <h1 class="font-bold text-yellow-500 text-2xl">
+                A PROPOS
+            </h1>
+            <h1 class="text-4xl font-bold">Lorem ipsum dolor sit quibusdam ea accusamus consectetur. </h1>
+            <p class=" text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quod sint consequatur aspernatur cumque repellat eos laudantium, voluptate voluptatum facere voluptatibus et temporibus eaque assumenda libero tempore deleniti aliquam eligendi?
+            </p>
+            <p class="mt-8 text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit neque inventore voluptatibus quo incidunt? Quod qui, animi dolore tempore minima quaerat recusandae laborum fugit ipsam? Dicta laudantium deleniti sunt eius!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur earum facilis voluptates eum itaque similique, ratione quibusdam repellat error unde, rem et sint molestias deserunt, quae maiores corporis ex dolorem!
+            </p>
+            <div class="w-full flex justify-center">
+                <a href="about.html" class="mt-10 p-2 px-4 w-[150px] bg-blue-800 text-white text-center font-bold">VOIR PLUS</a>
+            </div>
+        </div>
+
+    </section> 
+    <section id="#why-us" class="w-full px-12 mt-12 flex justify-between gap-12 flex-wrap">
+        <div class="flex flex-col gap-4 w-full md:w-1/2">
+            <h1 class="font-bold text-yellow-500 text-2xl">
+                Pourquoi nous choisir
+            </h1>
+            <h1 class="text-4xl font-bold">Energie Solaire </h1>
+            
+            <p class="mt-8 text-gray-400">
+                Que vous soyez propriétaire, une entreprise ou une association à but non lucratif, les coûts d'électricité peuvent représenter une part importante de vos dépenses mensuelles. Même si vous ne produisez pas 100 % de l'énergie que vous consommez, le solaire réduira vos factures d'énergie, vous permettant ainsi de faire de grosses économies. De plus, le coût de l'énergie solaire étant en baisse, elle est désormais plus abordable que jamais.
+            </p>
+            <div class="w-full flex justify-center">
+                <a href="" class="mt-10 p-2 px-4 w-[150px] bg-blue-800 text-white text-center font-bold">VOIR PLUS</a>
+            </div>
+        </div>
+        <img src="../images/african-american-technician-checks-maintenance-solar-panels-group-three-black-engineers-meeting-solar-station-make-deal-with-money.jpg" alt="" class="w-full md:w-[550px]">
+    </section>
+    <section id="service" class="bg-white py-20 px-12 sm:px-6 lg:px-8 font-sans">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center mb-16">
+            <span class="text-yellow-500 text-xs font-bold uppercase tracking-widest block mb-3">
+                Ce que nous faisons
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">
+                Certains de nos services
+            </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+            
+            <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 text-yellow-500 pt-1">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M12 12l4.5-4.5M12 12l-4.5 4.5M12 12l4.5 4.5M12 12l-4.5-4.5M19.5 12h-15" />
+                </svg>
+                </div>
+                <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Énergie Éolienne</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    L'utilisation de l'énergie éolienne vous permet d'économiser jusqu'à 40 % de vos fonds tout en produisant la même quantité d'énergie.
+                </p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 text-yellow-500 pt-1">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                </div>
+                <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Énergie Renouvelable</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Elle offre une stabilité accrue des coûts grâce à une exposition réduite à la volatilité des prix des ressources énergétiques traditionnelles.
+                </p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 text-yellow-500 pt-1">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                </div>
+                <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Panneaux Résidentiels</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Le type de panneau solaire photovoltaïque le plus efficace et performant disponible reste le panneau en silicium monocristallin.
+                </p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 text-yellow-500 pt-1">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16M4 6v12M12 6v12M20 6v12" />
+                </svg>
+                </div>
+                <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Panneaux Commerciaux</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Plusieurs cellules solaires sont interconnectées de manière optimale pour créer un module technique complet, qui compose le panneau.
+                </p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 text-yellow-500 pt-1">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 009 11.57V11m12 9.571c-1.744-2.772-2.753-6.054-2.753-9.571V11a3 3 0 116 0v.57c0 1.93-.321 3.784-.91 5.513M15 11a3 3 0 11-6 0V5a3 3 0 116 0v6z" />
+                </svg>
+                </div>
+                <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Assistance de Projet</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Notre entreprise assure une maintenance intégrale de l'ensemble du projet ainsi qu'un accompagnement personnalisé pour chaque client.
+                </p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 text-yellow-500 pt-1">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a2 2 0 01-2 2H3m2 4h16M5 14v6m4-6v6m4-6v6m4-6v6M5 10h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z" />
+                </svg>
+                </div>
+                <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Ingénierie & Construction</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Nous prenons l'entière responsabilité de la phase de construction du projet ainsi que de la gestion des infrastructures techniques.
+                </p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="w-full mt-6 flex justify-center">
+            <a href="services.html" class="mt-10 p-2 px-4 w-[150px] bg-blue-800 text-white font-bold text-center">VOIR PLUS</a>
+        </div>
+    </section>
+    <section class="py-16 px-12 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+            <div>
+                <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Get In Touch</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mt-3 leading-tight">Contactez-nous</h2>
+                <p class="text-muted text-base mt-4 leading-relaxed">
+                    Si vous souhaitez travailler avec nous, n'hésitez pas à nous écrire. Nous serons ravis de vous accompagner dans vos projets.
+                </p>
+
+                <div class="space-y-4 mt-6">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt text-primary text-xl w-6 mt-1"></i>
+                        <span class="text-muted text-sm">Avenue de la Révolution, Kinshasa, RDC</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-envelope text-primary text-xl w-6 mt-1"></i>
+                        <span class="text-muted text-sm">info@iec-energie.cd</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-phone text-primary text-xl w-6 mt-1"></i>
+                        <span class="text-muted text-sm">+243 812 345 678</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-lightbg p-6 border border-gray-200/80">
+                <form>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-dark font-medium text-sm mb-1">Prénom</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200/80 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Votre prénom" />
+                        </div>
+                        <div>
+                            <label class="block text-dark font-medium text-sm mb-1">Nom</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200/80 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Votre nom" />
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <label class="block text-dark font-medium text-sm mb-1">Téléphone</label>
+                        <input type="tel" class="w-full px-4 py-3 rounded-xl border border-gray-200/80 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="+243 XXX XXX XXX" />
+                    </div>
+
+                    <div class="mt-4">
+                        <label class="block text-dark font-medium text-sm mb-1">Message</label>
+                        <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200/80 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Décrivez votre projet..."></textarea>
+                    </div>
+
+                    <button type="submit" class="mt-4 bg-blue-800 text-white font-semibold px-8 py-3.5 shadow-md hover:shadow-lg transition">
+                        ENVOYER
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-gray-400 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-4 md:justify-between flex-wrap">
+            <div id="logo" class=" text-3xl text-white flex items-center gap-4">
+                <img src="../images/logo-IEC.png" alt="" class="w-10 h-10">
+                <h1>
+                    IEC<span class="text-yellow-600 font-bold">Solaire</span>
+                </h1>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h1 class="text-2xl text-white font-bold">Copyright</h1>
+                <p class="text-sm mt-4 opacity-70">
+                    &copy; 2026 Intervention de l'Électricité au Congo &bull; « Votre énergie, notre priorité. »
+                </p>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="../js/btn_nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos - I.E.C</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f9a825',   
+                        dark: '#1a2a3a',
+                        muted: '#4a5b6b',
+                        lightbg: '#f8fafc',
+                        softgray: '#f1f5f9',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 8px 30px rgba(0, 0, 0, 0.05)',
+                        'card-hover': '0 12px 40px rgba(0, 0, 0, 0.08)',
+                    },
+                }
+            }
+        }
+    </script>
+
+    
+</head>
+<body>
+
+    <header class="relative w-full h-[250px] bg-cover bg-center bg-no-repeat" 
+        style="background-image: linear-gradient(90deg, #0000004b, #000000b0), url('../images/image_header.jpg')">
+
+        <div class="px-12 py-6">
+            <div class="hidden md:flex justify-between text-white">
+                <div class="flex gap-2">
+                    <span>Kinshasa, Limete 1er rue</span>
+                    <span>+243 895 719 998</span>
+                </div>
+                <div>
+                    <a href="">Connexion</a> | <a href="">Inscription</a>
+                </div>
+            </div>
+            <nav class="hidden md:flex justify-between text-gray-200 pt-8">
+                <div id="logo" class=" text-3xl text-white flex items-center gap-4">
+                    <img src="../images/logo-IEC.png" alt="" class="w-10 h-10">
+                    <h1>
+                        IEC<span class="text-yellow-600 font-bold">Solaire</span>
+                    </h1>
+                </div>
+                <div class="flex gap-6 font-bold">
+                    <a href="index.html" class="">Acceuil</a>
+                    <a href="services.html">Services</a>
+                    <a href="">Produits</a>
+                    <a href="#apropos" class="text-yellow-500">A propos</a>
+                    <a href="">Contact</a>
+                </div>
+            </nav>
+
+        </div>
+
+        <nav class="absolute top-0 z-40 w-[100%] flex md:hidden justify-between px-12 py-6">
+            <div id="logo" class=" text-3xl text-white flex items-center gap-4">
+                <img src="../images/logo-IEC.png" alt="" class="w-10 h-10">
+                <h1>
+                    IEC<span class="text-yellow-600 font-bold">Solaire</span>
+                </h1>
+            </div>
+            <button onclick="menuburger()">
+                <i id="btn-open" class="fas fa-bars text-2xl text-white"></i>
+                <i id="btn-close" class="hidden fas fa-box text-2xl text-white"></i>
+            </button>
+        </nav>
+        <div id="options" class="bg-gray-800 text-white absolute top-0 w-full h-screen hidden flex flex-col items-center justify-center gap-2">
+            
+            <div class="flex flex-col gap-2 mt-6">
+                <a href="index.html" class="text-yellow-500">Acceuil</a>
+                <a href="services.html">Services</a>
+                <a href="">Produits</a>
+                <a href="about.html">A propos</a>
+                <a href="">Contact</a>
+                <a href="">Connexion</a>
+                <a href="">Inscription</a>
+            </div>
+        </div>
+
+
+        <section class="px-12 py-6 flex justify-between py-4 mt-10">
+            <h1 class="text-white text-3xl font-bold">A PROPOS</h1>
+            <div class="">
+                <div class="flex items-center gap-2 text-sm">
+                    <a href="index.html" class="text-primary font-medium hover:underline">Accueil</a>
+                    <span class="text-gray-400 text-xs"><i class="fas fa-chevron-right"></i></span>
+                    <span class="text-white font-medium">A Propos</span>
+                </div>
+            </div>
+        </section>     
+    </header>
+
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div>
+                    <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Welcome Message</span>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark mt-3 leading-tight">
+                        Qui sommes-nous
+                    </h1>
+                    <p class="text-muted text-base mt-5 leading-relaxed">
+                        <strong class="text-dark font-semibold">Intervention de l'Électricité au Congo (I.E.C)</strong> est une entreprise
+                        congolaise basée en République Démocratique du Congo, spécialisée dans les travaux d'électricité,
+                        la fourniture d'équipements électriques, l'installation des systèmes énergétiques ainsi que les
+                        services de maintenance et de dépannage.
+                    </p>
+                    
+                </div>
+
+                <p class="text-muted text-base mt-4 leading-relaxed">
+                    Notre entreprise met son expertise au service des particuliers, des entreprises, des institutions
+                    et des communautés afin de garantir un accès fiable et sécurisé à l'énergie électrique.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-lightbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Nos Réalisations</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mt-3 leading-tight">NOS DIFFERENTES INTERVENTIONS</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mt-10">
+                <div>
+                    <p class="text-muted text-base leading-relaxed">
+                        Depuis sa création, I.E.C a réalisé des installations électriques pour des particuliers,
+                        des entreprises, des écoles et des institutions publiques à travers la RDC. Nous avons
+                        aussi bien des clients particuliers que des entreprises qui ont déjà apprécié nos services
+                        et les utilisent avec succès au quotidien.
+                    </p>
+                    <p class="text-muted text-base mt-4 leading-relaxed">
+                        Que vous soyez un particulier, une entreprise ou une organisation à but non lucratif,
+                        les coûts de l'électricité peuvent représenter une part importante de vos dépenses mensuelles.
+                        Nos solutions vous aident à maîtriser votre consommation et à réaliser des économies durables.
+                    </p>
+                    
+                </div>
+
+                <div class="video-placeholder rounded-2xl min-h-[200px] flex items-center justify-center gap-4 text-white shadow-lg">
+                   
+                    <iframe 
+                    src="https://www.youtube.com/embed/9n9SjTDOvaI" 
+                    title="RDC : un réseau solaire fait revivre les entreprises à Goma" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen
+                    class="w-full h-full">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="py-16 md:py-20 bg-lightbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">FAQ</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mt-3 leading-tight">Questions fréquentes</h2>
+            <p class="text-muted text-base max-w-2xl mt-3 leading-relaxed">
+                I.E.C est un leader dans le secteur de l'électricité en RDC. Cette solution aura un impact positif
+                sur votre quotidien !
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-10">
+                <div class="faq-item bg-white rounded-2xl p-5 border border-gray-200/80 cursor-pointer hover:shadow-card transition shadow-card open">
+                    <div class="faq-question flex justify-between items-center font-semibold text-dark text-base">
+                        <span>1. Qualité de l'énergie et votre entreprise</span>
+                        <i class="fas fa-plus text-primary text-lg faq-icon transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer text-muted text-sm leading-relaxed">
+                        Nous garantissons une installation conforme aux normes, avec des équipements de qualité et un suivi technique rigoureux.
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl p-5 border border-gray-200/80 cursor-pointer hover:shadow-card transition shadow-card">
+                    <div class="faq-question flex justify-between items-center font-semibold text-dark text-base">
+                        <span>2. Comment l'énergie solaire permet d'économiser</span>
+                        <i class="fas fa-plus text-primary text-lg faq-icon transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer text-muted text-sm leading-relaxed">
+                        L'énergie solaire réduit votre facture d'électricité et vous protège contre les hausses de tarifs. Nous vous accompagnons dans l'étude et le dimensionnement de vos installations.
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl p-5 border border-gray-200/80 cursor-pointer hover:shadow-card transition shadow-card">
+                    <div class="faq-question flex justify-between items-center font-semibold text-dark text-base">
+                        <span>3. Questions avant d'installer des panneaux solaires</span>
+                        <i class="fas fa-plus text-primary text-lg faq-icon transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer text-muted text-sm leading-relaxed">
+                        Nous réalisons une étude technique gratuite, évaluons votre consommation et vous proposons la solution la plus adaptée à vos besoins et à votre budget.
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl p-5 border border-gray-200/80 cursor-pointer hover:shadow-card transition shadow-card">
+                    <div class="faq-question flex justify-between items-center font-semibold text-dark text-base">
+                        <span>4. Réseau énergétique renouvelable du futur</span>
+                        <i class="fas fa-plus text-primary text-lg faq-icon transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer text-muted text-sm leading-relaxed">
+                        Nous investissons dans les technologies de demain : stockage d'énergie, réseaux intelligents et solutions hybrides pour garantir une énergie propre et continue.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Important Milestones</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mt-3 leading-tight">Nos jalons clés</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+                <div class="milestone-card bg-lightbg rounded-2xl p-6 text-center border border-gray-200/80 shadow-card">
+                    <div class="text-4xl md:text-5xl font-extrabold text-primary">87%</div>
+                    <div class="text-sm font-semibold text-dark mt-2">Création d'emplois</div>
+                </div>
+                <div class="milestone-card bg-lightbg rounded-2xl p-6 text-center border border-gray-200/80 shadow-card">
+                    <div class="text-4xl md:text-5xl font-extrabold text-primary">75%</div>
+                    <div class="text-sm font-semibold text-dark mt-2">Flexibilité financière</div>
+                </div>
+                <div class="milestone-card bg-lightbg rounded-2xl p-6 text-center border border-gray-200/80 shadow-card">
+                    <div class="text-4xl md:text-5xl font-extrabold text-primary">63%</div>
+                    <div class="text-sm font-semibold text-dark mt-2">Subventions gouvernementales</div>
+                </div>
+                <div class="milestone-card bg-lightbg rounded-2xl p-6 text-center border border-gray-200/80 shadow-card">
+                    <div class="text-4xl md:text-5xl font-extrabold text-primary">50%</div>
+                    <div class="text-sm font-semibold text-dark mt-2">Énergie solaire</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="bg-dark text-gray-400 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-4 md:justify-between flex-wrap">
+            <div id="logo" class=" text-3xl text-white flex items-center gap-4">
+                <img src="../images/logo-IEC.png" alt="" class="w-10 h-10">
+                <h1>
+                    IEC<span class="text-yellow-600 font-bold">Solaire</span>
+                </h1>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h1 class="text-2xl text-white font-bold">Copyright</h1>
+                <p class="text-sm mt-4 opacity-70">
+                    &copy; 2026 Intervention de l'Électricité au Congo &bull; « Votre énergie, notre priorité. »
+                </p>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="../js/btn_nav.js"></script>
+</body>
+</html>
